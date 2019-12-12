@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <title>Jensen</title>
+    <style>
+        /* Header */
+        #header {
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+        }
+
+        /* Set */
+        .bg {
+            background-image: url("image/bg.jpg");
+            padding-top: 65px;
+        }
+
+        .content {
+            height: 500px;
+        }
+
+        .jumbotron {
+            background-color: transparent;
+        }
+
+        .aboutMe {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .myPhoto {
+            height: 20%;
+            width: 17%;
+            float: left;
+        }
+
+        .myContent {
+            float: left;
+            padding-left: 50px;
+            width: 50%;
+        }
+
+        .borderBottom {
+            border-bottom: 1px solid white;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .experience {
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            padding-top: 30px;
+        }
+
+        .portfolio {
+            width: 50%;
+            height: 20px;
+            position: absolute;
+            left: 25%;
+            margin-top: -30px;
+        }
+
+        .card {
+            min-height: 410px;
+        }
+
+
+
+
+
+        /* Footer */
+        .footer {
+            height: 100px;
+            margin-bottom: 0;
+            padding-top: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 0;
+        }
+
+        .contact {
+            color: #808080;
+        }
+
+        .icon {
+            text-decoration: none;
+            text-decoration: none;
+            color: #41484c;
+        }
+
+        .icon:before {
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            text-transform: none !important;
+            font-weight: 400;
+        }
+
+        .icon:before {
+            line-height: inherit;
+        }
+
+        .icon>.label {
+            display: none;
+        }
+
+        .fa:hover {
+            color: #ffffff;
+        }
+
+        ul.icons {
+            cursor: default;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            height: 10px;
+        }
+
+        ul.icons li {
+            display: inline-block;
+            padding-left: 0;
+        }
+
+        ul.icons a {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            line-height: 1em;
+            text-align: center;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Jensen Fong</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#" data-target="#carousel-controller" data-slide-to="0" class="nav-link active"
+                            id="aboutMeButton">個人檔案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-target="#carousel-controller" data-slide-to="1" class="nav-link"
+                            id="experienceButton">經歷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-target="#carousel-controller" data-slide-to="2" class="nav-link"
+                            id="portfolioButton">作品集</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="bg">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active content">
+                    <div class="container jumbotron">
+                        <div class="aboutMe text-light">
+                            <img class="myPhoto" src="image/Jensen.JPG">
+                            <div class="myContent">
+                                <h1 class="lead display-8 col borderBottom">關於我</h1>
+                                <p>禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚
+                                    禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚</p>
+                                <h1 class="lead display-8 col borderBottom" style="padding-top: 70px;">擅長工具及語言</h1>
+                                <p>禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚
+                                    禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item content">
+                    <div class="container jumbotron">
+                        <div class="experience text-light">
+                            <h1 class="lead display-8 col-2">經驗</h1>
+                            <table class="table text-light">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">公司名稱</th>
+                                        <th scope="col">部門/職稱</th>
+                                        <th scope="col">工作期間起訖</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">傲勝遊戲有限公司</th>
+                                        <td>前端/Unity工程師</td>
+                                        <td>108/9-108/10</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">TVBS聯利媒體</th>
+                                        <td>新聞部/實習生</td>
+                                        <td>106/7-107/6</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">PChome</th>
+                                        <td>資訊部/實習生</td>
+                                        <td>103/6-103/9</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">廣達電腦</th>
+                                        <td>資訊部/實習生</td>
+                                        <td>100/6-100/9</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item content">
+                    <div class="container text-center my-5">
+                        <div class="portfolio">
+                            <h1 class="lead display-8 text-light">作品集</h1>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/1.jpg" class="card-img-top image1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">50%</h5>
+                                            <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                                data-target="#mywork1">了解更多</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/2.png" class="card-img-top image2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hero's trial</h5>
+                                            <p class="card-text">3D動作RPG，帶著主角一路提升能力
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                                data-target="#mywork2">了解更多</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev" id="prev">
+                <span class="carousel-control-prev-icon"></span></a>
+            <a href="#carousel-controller" data-slide="next" class="carousel-control-next" id="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active" id="aboutMeID"></li>
+                <li data-target="#carousel-controller" data-slide-to="1" id="experienceID"></li>
+                <li data-target="#carousel-controller" data-slide-to="2" id="portfolioID"></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center footer bg-dark">
+        <p class="contact">聯絡方式</p>
+        <ul class="icons">
+            <li><a href="#" class="icon fa fa-facebook fa-2x" aria-hidden="true"><span class="label">Facebook</span></a>
+            </li>
+            <li><a href="#" class="icon fa fa-instagram fa-2x" aria-hidden="true"><span
+                        class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa fa-envelope fa-2x" aria-hidden="true"><span class="label">Mail</span></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="modal" id="mywork1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">50% DEMO Video</h5>
+                    <button type="button" class="close" data-dismiss="modal" name="button">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/qekrBcUDVF4"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="mywork2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hero's trial DEMO Video</h5>
+                    <button type="button" class="close" data-dismiss="modal" name="button">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/In9M6HFGw0o"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            interval: false
+        })
+
+        $("#mywork1").on('hidden.bs.modal', function (e) {
+            $("#mywork1 iframe").attr("src", $("#mywork1 iframe").attr("src"));
+        });
+
+        $("#mywork2").on('hidden.bs.modal', function (e) {
+            $("#mywork2 iframe").attr("src", $("#mywork2 iframe").attr("src"));
+        });
+
+        $("li a").click(function () {
+            $('li a').not(this).removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $("#prev").click(function () {
+            setTimeout(function () {
+                if ($('#aboutMeID').hasClass('active')) {
+                    $('#aboutMeButton').addClass('active');
+                    $('#experienceButton').removeClass('active');
+                    $('#portfolioButton').removeClass('active');
+                } if ($('#experienceID').hasClass('active')) {
+                    $('#aboutMeButton').removeClass('active');
+                    $('#experienceButton').addClass('active');
+                    $('#portfolioButton').removeClass('active');
+                } if ($('#portfolioID').hasClass('active')) {
+                    $('#aboutMeButton').removeClass('active');
+                    $('#experienceButton').removeClass('active');
+                    $('#portfolioButton').addClass('active');
+                }
+            }, 300);
+        });
+
+        $("#next").click(function () {
+            setTimeout(function () {
+                if ($('#aboutMeID').hasClass('active')) {
+                    $('#aboutMeButton').addClass('active');
+                    $('#experienceButton').removeClass('active');
+                    $('#portfolioButton').removeClass('active');
+                } if ($('#experienceID').hasClass('active')) {
+                    $('#aboutMeButton').removeClass('active');
+                    $('#experienceButton').addClass('active');
+                    $('#portfolioButton').removeClass('active');
+                } if ($('#portfolioID').hasClass('active')) {
+                    $('#aboutMeButton').removeClass('active');
+                    $('#experienceButton').removeClass('active');
+                    $('#portfolioButton').addClass('active');
+                }
+            }, 300);
+        });
+
+        $('.navbar-collapse a').click(function () {
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        var $contentHeight = $('.content');
+        var $window = $(window).on('resize', function () {
+            var height = $(this).height - 156;
+            $contentHeight.height(height);
+        }).trigger('resize');
+    </script>
+</body>
+
+</html>
