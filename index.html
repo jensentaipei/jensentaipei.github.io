@@ -28,7 +28,7 @@
         }
 
         .content {
-            height: 500px;
+            /* height: 500px; */
         }
 
         .jumbotron {
@@ -151,6 +151,13 @@
             line-height: 1em;
             text-align: center;
             border: 0;
+        }
+
+
+        @media screen and (max-width:500px) {
+            .myPhoto {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -302,7 +309,8 @@
             <li><a href="https://github.com/jensentaipei" class="icon fa fa-github fa-2x" aria-hidden="true"><span
                         class="label">Github</span></a>
             </li>
-            <li><a href="mailto:jensentaipei@gmail.com"  class="icon fa fa-envelope fa-2x" aria-hidden="true"><span class="label">Mail</span></a>
+            <li><a href="mailto:jensentaipei@gmail.com" class="icon fa fa-envelope fa-2x" aria-hidden="true"><span
+                        class="label">Mail</span></a>
             </li>
         </ul>
     </div>
