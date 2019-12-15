@@ -24,6 +24,7 @@
         .bg {
             background-image: url("image/bg.jpg");
             padding-top: 65px;
+            height: calc(100vh - 100px);
         }
 
         .content {
@@ -78,6 +79,10 @@
             min-height: 410px;
         }
 
+        .disable {
+            visibility: hidden;
+        }
+
 
 
 
@@ -90,6 +95,8 @@
             box-sizing: border-box;
             overflow: hidden;
             border-radius: 0;
+            position: relative;
+            z-index: 50;
         }
 
         .contact {
@@ -276,7 +283,7 @@
             <a href="#carousel-controller" data-slide="next" class="carousel-control-next" id="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators disable">
                 <li data-target="#carousel-controller" data-slide-to="0" class="active" id="aboutMeID"></li>
                 <li data-target="#carousel-controller" data-slide-to="1" id="experienceID"></li>
                 <li data-target="#carousel-controller" data-slide-to="2" id="portfolioID"></li>
@@ -290,11 +297,12 @@
             <li><a href="https://www.facebook.com/jensentaipei" class="icon fa fa-facebook fa-2x"
                     aria-hidden="true"><span class="label">Facebook</span></a>
             </li>
-            <li><a href="https://www.instagram.com/jensentaipei/?hl=zh-tw" class="icon fa fa-instagram fa-2x" aria-hidden="true"><span
-                        class="label">Instagram</span></a></li>
-            <li><a href="https://github.com/jensentaipei" class="icon fa fa-github fa-2x" aria-hidden="true"><span class="label">Mail</span></a>
+            <li><a href="https://www.instagram.com/jensentaipei/?hl=zh-tw" class="icon fa fa-instagram fa-2x"
+                    aria-hidden="true"><span class="label">Instagram</span></a></li>
+            <li><a href="https://github.com/jensentaipei" class="icon fa fa-github fa-2x" aria-hidden="true"><span
+                        class="label">Github</span></a>
             </li>
-            <li><a href="#" class="icon fa fa-envelope fa-2x" aria-hidden="true"><span class="label">Mail</span></a>
+            <li><a href="mailto:jensentaipei@gmail.com"  class="icon fa fa-envelope fa-2x" aria-hidden="true"><span class="label">Mail</span></a>
             </li>
         </ul>
     </div>
@@ -305,7 +313,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">50% DEMO Video</h5>
-                    <button type="button" class="close" data-dismiss="modal" name="button">
+                    <button type="button" class="close" data-dismiss="modal" name="button" style="outline: 0;">
                         <span>&times;</span>
                     </button>
                 </div>
@@ -324,7 +332,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Hero's trial DEMO Video</h5>
-                    <button type="button" class="close" data-dismiss="modal" name="button">
+                    <button type="button" class="close" data-dismiss="modal" name="button" style="outline: 0;">
                         <span>&times;</span>
                     </button>
                 </div>
