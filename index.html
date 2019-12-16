@@ -28,10 +28,6 @@
             /* padding-bottom: 100px; */
         }
 
-        #carousel-controller {
-            height: calc(100vh - 165px);
-        }
-
         .content {
             height: calc(100vh - 165px);
             overflow: auto;
@@ -88,7 +84,6 @@
 
         .portfolio {
             width: 50%;
-            /* height: calc(100vh - 165px); */
             position: absolute;
             left: 25%;
             margin-top: -30px;
@@ -101,12 +96,15 @@
         }
 
         .card {
-            /* min-height: 415px; */
             height: calc(100vh - 250px);
         }
 
         .card-over {
             overflow: auto;
+        }
+
+        .card-height {
+            height: 50%;
         }
 
         .disable {
@@ -225,7 +223,7 @@
     <div id="header">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <a href="#" class="navbar-brand">Jensen Fong</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" style="outline: 0;">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -329,7 +327,7 @@
                                         </div>
                                         <div class="card-footer">
                                             <button type="button" class="btn btn-success" data-toggle="modal"
-                                                data-target="#mywork1">了解更多</button>
+                                                data-target="#mywork1" style="outline: 0;">了解更多</button>
                                         </div>
                                     </div>
                                 </div>
@@ -343,36 +341,36 @@
                                         </div>
                                         <div class="card-footer">
                                             <button type="button" class="btn btn-success" data-toggle="modal"
-                                                data-target="#mywork2">了解更多</button>
+                                                data-target="#mywork2" style="outline: 0;">了解更多</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- ---------------------------------portfolio-mobile------------------------------------------ -->
                             <div class="card portfolio-mobile">
-                                <div class="row">
+                                <div class="row card-height" style="border-bottom: 1px solid black;">
                                     <div class="col">
                                         <img src="image/1.jpg" class="w-100 image1">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                        data-target="#mywork1" style="outline: 0; margin-top: 30px;">了解更多</button>
                                     </div>
-                                    <div class="col">
-                                        <div class="card-block card-over">
+                                    <div class="col card-over" style="height: 100%;">
+                                        <div class="card-block">
                                             <h4 class="card-title">50%</h4>
                                             <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題</p>
-                                            <button type="button" class="btn btn-success" data-toggle="modal"
-                                                data-target="#mywork1">了解更多</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row card-height">
                                     <div class="col">
                                         <img src="image/2.png" class="w-100 image2">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                        data-target="#mywork2" style="outline: 0; margin-top: 30px;">了解更多</button>
                                     </div>
-                                    <div class="col">
-                                        <div class="card-block card-over">
+                                    <div class="col card-over" style="height: 100%;">
+                                        <div class="card-block">
                                             <h4 class="card-title">Hero's trial</h4>
                                             <p class="card-text">3D動作RPG，帶著主角一路提升能力</p>
-                                            <button type="button" class="btn btn-success" data-toggle="modal"
-                                                data-target="#mywork2">了解更多</button>
                                         </div>
                                     </div>
                                 </div>
