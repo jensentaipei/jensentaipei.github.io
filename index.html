@@ -53,6 +53,13 @@
             float: left;
         }
 
+        .myPhoto-mobile {
+            height: 20%;
+            width: 17%;
+            position: relative;
+            left: 40%;
+        }
+
         .myContent {
             float: left;
             padding-left: 50px;
@@ -90,10 +97,12 @@
             visibility: hidden;
         }
 
-        .portfolio-mobile {
+        .portfolio-mobile,
+        .image-mobile {
             visibility: hidden;
             display: none;
         }
+
 
 
 
@@ -187,7 +196,8 @@
                 display: none;
             }
 
-            .portfolio-mobile {
+            .portfolio-mobile,
+            .image-mobile {
                 visibility: visible;
                 display: block;
             }
@@ -229,6 +239,9 @@
                         <div class="aboutMe text-light">
                             <img class="myPhoto" src="image/Jensen.JPG">
                             <div class="myContent">
+                                <div class="image-mobile">
+                                    <img class="myPhoto-mobile" src="image/Jensen.JPG">
+                                </div>
                                 <h1 class="lead display-8 col borderBottom">關於我</h1>
                                 <p>禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚
                                     禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚</p>
