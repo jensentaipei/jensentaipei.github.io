@@ -42,6 +42,11 @@
             padding-top: 30px;
         }
 
+        .icon-image {
+            height: 50px;
+            width: 50px;
+        }
+
         .myPhoto {
             height: 20%;
             width: 17%;
@@ -163,6 +168,12 @@
 
 
         @media screen and (max-width:575px) {
+            .myContent {
+                clear: both;
+                padding-left: 0px;
+                width: 100%;
+            }
+
             .myPhoto {
                 display: none;
             }
@@ -222,8 +233,14 @@
                                 <p>禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚
                                     禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚</p>
                                 <h1 class="lead display-8 col borderBottom" style="padding-top: 70px;">擅長工具及語言</h1>
-                                <p>禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚
-                                    禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚禰豆子讚讚</p>
+                                <ul class="icons">
+                                    <li><img class="icon-image" src="image/cocos.png"></li>
+                                    <li><img class="icon-image" src="image/js.jpg"></li>
+                                    <li><img class="icon-image" src="image/unity.png"></li>
+                                    <li><img class="icon-image" src="image/c.png"></li>
+                                    <li><img class="icon-image" src="image/html5.png"></li>
+                                    <li><img class="icon-image" src="image/css.png"></li>
+                                </ul>
                             </div>
 
                         </div>
@@ -238,29 +255,29 @@
                                     <tr>
                                         <th scope="col">公司名稱</th>
                                         <th scope="col">部門/職稱</th>
-                                        <th scope="col">工作期間起訖</th>
+                                        <th scope="col">工作內容</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">傲勝遊戲有限公司</th>
                                         <td>前端/Unity工程師</td>
-                                        <td>108/9-108/10</td>
+                                        <td>使用Cocos Creator編寫網頁</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">TVBS聯利媒體</th>
                                         <td>新聞部/實習生</td>
-                                        <td>106/7-107/6</td>
+                                        <td>使用Edius剪輯新聞影片</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">PChome</th>
                                         <td>資訊部/實習生</td>
-                                        <td>103/6-103/9</td>
+                                        <td>學習網頁知識</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">廣達電腦</th>
                                         <td>資訊部/實習生</td>
-                                        <td>100/6-100/9</td>
+                                        <td>學習網頁知識</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -437,42 +454,6 @@
             $('li a').not(this).removeClass('active');
             $(this).addClass('active');
         });
-
-        // $("#prev").click(function () {
-        //     setTimeout(function () {
-        //         if ($('#aboutMeID').hasClass('active')) {
-        //             $('#aboutMeButton').addClass('active');
-        //             $('#experienceButton').removeClass('active');
-        //             $('#portfolioButton').removeClass('active');
-        //         } if ($('#experienceID').hasClass('active')) {
-        //             $('#aboutMeButton').removeClass('active');
-        //             $('#experienceButton').addClass('active');
-        //             $('#portfolioButton').removeClass('active');
-        //         } if ($('#portfolioID').hasClass('active')) {
-        //             $('#aboutMeButton').removeClass('active');
-        //             $('#experienceButton').removeClass('active');
-        //             $('#portfolioButton').addClass('active');
-        //         }
-        //     }, 300);
-        // });
-
-        // $("#next").click(function () {
-        //     setTimeout(function () {
-        //         if ($('#aboutMeID').hasClass('active')) {
-        //             $('#aboutMeButton').addClass('active');
-        //             $('#experienceButton').removeClass('active');
-        //             $('#portfolioButton').removeClass('active');
-        //         } if ($('#experienceID').hasClass('active')) {
-        //             $('#aboutMeButton').removeClass('active');
-        //             $('#experienceButton').addClass('active');
-        //             $('#portfolioButton').removeClass('active');
-        //         } if ($('#portfolioID').hasClass('active')) {
-        //             $('#aboutMeButton').removeClass('active');
-        //             $('#experienceButton').removeClass('active');
-        //             $('#portfolioButton').addClass('active');
-        //         }
-        //     }, 300);
-        // });
 
         $('.navbar-collapse a').click(function () {
             $(".navbar-collapse").collapse('hide');
