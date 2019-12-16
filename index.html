@@ -28,8 +28,12 @@
             /* padding-bottom: 100px; */
         }
 
+        #carousel-controller {
+            height: calc(100vh - 165px);
+        }
+
         .content {
-            height: calc(100vh - 100px);
+            height: calc(100vh - 165px);
             overflow: auto;
         }
 
@@ -64,6 +68,7 @@
             float: left;
             padding-left: 50px;
             width: 50%;
+            /* overflow: auto; */
         }
 
         .borderBottom {
@@ -83,14 +88,25 @@
 
         .portfolio {
             width: 50%;
-            height: calc(100vh - 100px);
+            /* height: calc(100vh - 165px); */
             position: absolute;
             left: 25%;
             margin-top: -30px;
         }
 
+        .image1,
+        .image2 {
+            height: 50%;
+            width: 100%;
+        }
+
         .card {
-            min-height: 415px;
+            /* min-height: 415px; */
+            height: calc(100vh - 250px);
+        }
+
+        .card-over {
+            overflow: auto;
         }
 
         .disable {
@@ -306,7 +322,7 @@
                                 <div class="col">
                                     <div class="card">
                                         <img src="image/1.jpg" class="card-img-top image1">
-                                        <div class="card-body">
+                                        <div class="card-body card-over">
                                             <h5 class="card-title">50%</h5>
                                             <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題
                                             </p>
@@ -320,7 +336,7 @@
                                 <div class="col">
                                     <div class="card">
                                         <img src="image/2.png" class="card-img-top image2">
-                                        <div class="card-body">
+                                        <div class="card-body card-over">
                                             <h5 class="card-title">Hero's trial</h5>
                                             <p class="card-text">3D動作RPG，帶著主角一路提升能力
                                             </p>
@@ -339,7 +355,7 @@
                                         <img src="image/1.jpg" class="w-100 image1">
                                     </div>
                                     <div class="col">
-                                        <div class="card-block">
+                                        <div class="card-block card-over">
                                             <h4 class="card-title">50%</h4>
                                             <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題</p>
                                             <button type="button" class="btn btn-success" data-toggle="modal"
@@ -352,7 +368,7 @@
                                         <img src="image/2.png" class="w-100 image2">
                                     </div>
                                     <div class="col">
-                                        <div class="card-block">
+                                        <div class="card-block card-over">
                                             <h4 class="card-title">Hero's trial</h4>
                                             <p class="card-text">3D動作RPG，帶著主角一路提升能力</p>
                                             <button type="button" class="btn btn-success" data-toggle="modal"
