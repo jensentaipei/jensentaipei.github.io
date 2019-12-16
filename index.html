@@ -25,10 +25,12 @@
             background-image: url("image/bg.jpg");
             padding-top: 65px;
             height: calc(100vh - 100px);
+            /* padding-bottom: 100px; */
         }
 
         .content {
-            height: 500px;
+            height: calc(100vh - 100px);
+            overflow: auto;
         }
 
         .jumbotron {
@@ -69,18 +71,23 @@
 
         .portfolio {
             width: 50%;
-            height: 20px;
+            height: calc(100vh - 100px);
             position: absolute;
             left: 25%;
             margin-top: -30px;
         }
 
         .card {
-            min-height: 410px;
+            min-height: 415px;
         }
 
         .disable {
             visibility: hidden;
+        }
+
+        .portfolio-mobile {
+            visibility: hidden;
+            display: none;
         }
 
 
@@ -97,6 +104,7 @@
             border-radius: 0;
             position: relative;
             z-index: 50;
+            /* padding-top: -100px; */
         }
 
         .contact {
@@ -159,12 +167,18 @@
                 display: none;
             }
 
-            .content {
-                height: 800px;
+            #prev,
+            #next {
+                visibility: hidden;
             }
 
-            #prev ,#next {
-                visibility: hidden;
+            .portfolio-desk {
+                display: none;
+            }
+
+            .portfolio-mobile {
+                visibility: visible;
+                display: block;
             }
         }
     </style>
@@ -257,7 +271,8 @@
                     <div class="container text-center my-5">
                         <div class="portfolio">
                             <h1 class="lead display-8 text-light">作品集</h1>
-                            <div class="row">
+                            <!-- ---------------------------------portfolio-desk------------------------------------------ -->
+                            <div class="row portfolio-desk">
                                 <div class="col">
                                     <div class="card">
                                         <img src="image/1.jpg" class="card-img-top image1">
@@ -281,6 +296,35 @@
                                             </p>
                                         </div>
                                         <div class="card-footer">
+                                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                                data-target="#mywork2">了解更多</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------------------------------portfolio-mobile------------------------------------------ -->
+                            <div class="card portfolio-mobile">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="image/1.jpg" class="w-100 image1">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-block">
+                                            <h4 class="card-title">50%</h4>
+                                            <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題</p>
+                                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                                data-target="#mywork1">了解更多</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="image/2.png" class="w-100 image2">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Hero's trial</h4>
+                                            <p class="card-text">3D動作RPG，帶著主角一路提升能力</p>
                                             <button type="button" class="btn btn-success" data-toggle="modal"
                                                 data-target="#mywork2">了解更多</button>
                                         </div>
