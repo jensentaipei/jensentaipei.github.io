@@ -438,41 +438,41 @@
             $(this).addClass('active');
         });
 
-        $("#prev").click(function () {
-            setTimeout(function () {
-                if ($('#aboutMeID').hasClass('active')) {
-                    $('#aboutMeButton').addClass('active');
-                    $('#experienceButton').removeClass('active');
-                    $('#portfolioButton').removeClass('active');
-                } if ($('#experienceID').hasClass('active')) {
-                    $('#aboutMeButton').removeClass('active');
-                    $('#experienceButton').addClass('active');
-                    $('#portfolioButton').removeClass('active');
-                } if ($('#portfolioID').hasClass('active')) {
-                    $('#aboutMeButton').removeClass('active');
-                    $('#experienceButton').removeClass('active');
-                    $('#portfolioButton').addClass('active');
-                }
-            }, 300);
-        });
+        // $("#prev").click(function () {
+        //     setTimeout(function () {
+        //         if ($('#aboutMeID').hasClass('active')) {
+        //             $('#aboutMeButton').addClass('active');
+        //             $('#experienceButton').removeClass('active');
+        //             $('#portfolioButton').removeClass('active');
+        //         } if ($('#experienceID').hasClass('active')) {
+        //             $('#aboutMeButton').removeClass('active');
+        //             $('#experienceButton').addClass('active');
+        //             $('#portfolioButton').removeClass('active');
+        //         } if ($('#portfolioID').hasClass('active')) {
+        //             $('#aboutMeButton').removeClass('active');
+        //             $('#experienceButton').removeClass('active');
+        //             $('#portfolioButton').addClass('active');
+        //         }
+        //     }, 300);
+        // });
 
-        $("#next").click(function () {
-            setTimeout(function () {
-                if ($('#aboutMeID').hasClass('active')) {
-                    $('#aboutMeButton').addClass('active');
-                    $('#experienceButton').removeClass('active');
-                    $('#portfolioButton').removeClass('active');
-                } if ($('#experienceID').hasClass('active')) {
-                    $('#aboutMeButton').removeClass('active');
-                    $('#experienceButton').addClass('active');
-                    $('#portfolioButton').removeClass('active');
-                } if ($('#portfolioID').hasClass('active')) {
-                    $('#aboutMeButton').removeClass('active');
-                    $('#experienceButton').removeClass('active');
-                    $('#portfolioButton').addClass('active');
-                }
-            }, 300);
-        });
+        // $("#next").click(function () {
+        //     setTimeout(function () {
+        //         if ($('#aboutMeID').hasClass('active')) {
+        //             $('#aboutMeButton').addClass('active');
+        //             $('#experienceButton').removeClass('active');
+        //             $('#portfolioButton').removeClass('active');
+        //         } if ($('#experienceID').hasClass('active')) {
+        //             $('#aboutMeButton').removeClass('active');
+        //             $('#experienceButton').addClass('active');
+        //             $('#portfolioButton').removeClass('active');
+        //         } if ($('#portfolioID').hasClass('active')) {
+        //             $('#aboutMeButton').removeClass('active');
+        //             $('#experienceButton').removeClass('active');
+        //             $('#portfolioButton').addClass('active');
+        //         }
+        //     }, 300);
+        // });
 
         $('.navbar-collapse a').click(function () {
             $(".navbar-collapse").collapse('hide');
@@ -483,6 +483,25 @@
             var height = $(this).height;
             $contentHeight.height(height);
         }).trigger('resize');
+
+
+        $('#carousel-controller').on('slide.bs.carousel', function () {
+            setTimeout(function () {
+                if ($('#aboutMeID').hasClass('active')) {
+                    $('#aboutMeButton').addClass('active');
+                    $('#experienceButton').removeClass('active');
+                    $('#portfolioButton').removeClass('active');
+                } if ($('#experienceID').hasClass('active')) {
+                    $('#aboutMeButton').removeClass('active');
+                    $('#experienceButton').addClass('active');
+                    $('#portfolioButton').removeClass('active');
+                } if ($('#portfolioID').hasClass('active')) {
+                    $('#aboutMeButton').removeClass('active');
+                    $('#experienceButton').removeClass('active');
+                    $('#portfolioButton').addClass('active');
+                }
+            }, 300);
+        })
     </script>
 </body>
 
