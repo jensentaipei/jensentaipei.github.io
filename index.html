@@ -39,7 +39,7 @@
 
         .aboutMe {
             padding-left: 80px;
-            padding-top: 30px;
+            padding-top: 20px;
         }
 
         .icon-image {
@@ -49,16 +49,15 @@
 
         .myPhoto {
             height: 20%;
-            width: 17%;
+            width: 30%;
             float: left;
         }
 
         .myPhoto-mobile {
             height: 40%;
-            width: 34%;
+            width: 40%;
             position: relative;
             left: 30%;
-            padding-bottom: 20px;
         }
 
         .myContent {
@@ -116,6 +115,10 @@
         .image-mobile {
             visibility: hidden;
             display: none;
+        }
+
+        .img-profile {
+            border: .5rem solid rgba(255, 255, 255, .2);
         }
 
 
@@ -191,7 +194,7 @@
         }
 
 
-        @media screen and (max-width:575px) {
+        @media screen and (max-width:767px) {
 
             /* html,
             body {
@@ -241,7 +244,7 @@
 
 <body>
     <div id="header">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="#" class="navbar-brand">Jensen Fong</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 style="outline: 0;">
@@ -272,10 +275,11 @@
                 <div class="carousel-item active content">
                     <div class="container jumbotron">
                         <div class="aboutMe text-light">
-                            <img class="myPhoto" src="image/Jensen.JPG">
+                            <img class="myPhoto img-profile rounded-circle" src="image/jensen2.jpg">
                             <div class="myContent">
                                 <div class="image-mobile">
-                                    <img class="myPhoto-mobile" src="image/Jensen.JPG">
+                                    <img class="myPhoto-mobile img-profile rounded-circle mx-auto mb-2"
+                                        src="image/jensen2.jpg">
                                 </div>
                                 <h1 class="lead display-8 col borderBottom">關於我</h1>
                                 <p>世新大學數位多媒體設計學系遊戲設計組畢業，在大學期間熟悉使用C#於Unity上開發遊戲，並在畢業後在資策會Unity班有更進一步的學習，
@@ -345,7 +349,8 @@
                                         <img src="image/1.jpg" class="card-img-top image1">
                                         <div class="card-body card-over">
                                             <h5 class="card-title">50%</h5>
-                                            <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題
+                                            <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題。
+                                                負責人物移動及技能和場景建置。
                                             </p>
                                         </div>
                                         <div class="card-footer">
@@ -359,7 +364,8 @@
                                         <img src="image/2.png" class="card-img-top image2">
                                         <div class="card-body card-over">
                                             <h5 class="card-title">Hero's trial</h5>
-                                            <p class="card-text">3D動作RPG，帶著主角一路提升能力
+                                            <p class="card-text">3D動作RPG，帶著主角一路提升能力。
+                                                負責怪物AI以及遊戲內特效和場景建置。
                                             </p>
                                         </div>
                                         <div class="card-footer">
@@ -380,7 +386,8 @@
                                     <div class="col card-over" style="height: 100%; padding-left: 0;">
                                         <div class="card-block">
                                             <h4 class="card-title">50%</h4>
-                                            <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題</p>
+                                            <p class="card-text">雙人2D合作闖關遊戲，利用詼諧幽默的方式去呈現社會時事相關的議題。
+                                                負責人物移動及技能和場景建置。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -395,7 +402,8 @@
                                     <div class="col card-over" style="height: 100%; padding-left: 0;">
                                         <div class="card-block">
                                             <h4 class="card-title">Hero's trial</h4>
-                                            <p class="card-text">3D動作RPG，帶著主角一路提升能力</p>
+                                            <p class="card-text">3D動作RPG，帶著主角一路提升能力。
+                                                負責怪物AI以及遊戲內特效和場景建置。</p>
                                         </div>
                                     </div>
                                 </div>
